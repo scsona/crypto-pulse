@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="448" viewBox="0 0 820 448" role="img" aria-label="Crypto market pulse card">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="gauge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ef4444"/>
+      <stop offset="0.5" stop-color="#eab308"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+    <style>
+      text { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+      .title { font-size: 24px; font-weight: 700; fill: #f8fafc; }
+      .subtitle { font-size: 12px; fill: #64748b; }
+      .sym { font-size: 17px; font-weight: 700; fill: #e2e8f0; }
+      .name { font-size: 13px; fill: #94a3b8; }
+      .price { font-size: 16px; font-weight: 600; fill: #f1f5f9; }
+      .pct { font-size: 14px; font-weight: 600; }
+      .sep { stroke: #1f2a3d; stroke-width: 1; }
+      .pulse-label { font-size: 13px; font-weight: 700; }
+      .pulse-score { font-size: 13px; fill: #cbd5e1; }
+      .foot { font-size: 12px; fill: #64748b; }
+      .foot-link { font-size: 12px; font-weight: 600; fill: #38bdf8; }
+      .marker { animation: blink 2.4s ease-in-out infinite; }
+      @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.45; } }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="448" rx="16" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="819" height="447" rx="16" fill="none" stroke="#1f2a3d"/>
+
+  <text x="28" y="44" class="title">₿ Crypto Market Pulse</text>
+  <text x="28" y="64" class="subtitle">Top 6 by market cap · 24h change · updated 2026-06-16 12:48 UTC</text>
+
+  <text x="552" y="44" class="pulse-label" fill="#34d399" text-anchor="start">🙂 GREED</text>
+  <text x="792" y="44" class="pulse-score" text-anchor="end">61/100</text>
+  <rect x="552" y="70" width="240" height="8" rx="4" fill="url(#gauge)"/>
+  <g class="marker">
+    <line x1="698.4" y1="66" x2="698.4" y2="82" stroke="#f8fafc" stroke-width="2.5"/>
+    <circle cx="698.4" cy="74" r="5" fill="#f8fafc"/>
+  </g>
+
+  <g><text x="28" y="152.0" class="sym">BTC</text><text x="106" y="152.0" class="name">Bitcoin</text><text x="472" y="152.0" class="price" text-anchor="end">$64,211</text><text x="617" y="152.0" class="pct" fill="#34d399" text-anchor="end">▲ 2.34%</text><polyline fill="none" stroke="#34d399" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="642.0,149.7 645.2,149.9 648.4,150.7 651.6,151.8 654.8,153.2 658.0,154.5 661.1,155.5 664.3,156.0 667.5,155.9 670.7,155.1 673.9,153.9 677.1,152.3 680.3,150.6 683.5,149.0 686.7,147.7 689.9,146.7 693.1,146.0 696.3,145.6 699.4,145.2 702.6,144.6 705.8,143.7 709.0,142.5 712.2,140.8 715.4,138.8 718.6,136.8 721.8,134.8 725.0,133.3 728.2,132.3 731.4,132.0 734.6,132.3 737.7,133.2 740.9,134.3 744.1,135.5 747.3,136.6 750.5,137.2 753.7,137.4 756.9,137.1 760.1,136.4 763.3,135.5 766.5,134.6 769.7,133.8 772.9,133.3 776.0,133.1 779.2,133.2 782.4,133.3 785.6,133.4 788.8,133.1 792.0,132.3"/><line x1="28" y1="170" x2="792" y2="170" class="sep"/></g><g><text x="28" y="198.0" class="sym">ETH</text><text x="106" y="198.0" class="name">Ethereum</text><text x="472" y="198.0" class="price" text-anchor="end">$3,420</text><text x="617" y="198.0" class="pct" fill="#34d399" text-anchor="end">▲ 1.12%</text><polyline fill="none" stroke="#34d399" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="642.0,195.4 645.2,196.2 648.4,196.6 651.6,196.4 654.8,195.8 658.0,195.2 661.1,194.8 664.3,194.8 667.5,195.4 670.7,196.5 673.9,198.1 677.1,199.7 680.3,201.2 683.5,202.0 686.7,202.0 689.9,201.0 693.1,199.1 696.3,196.4 699.4,193.3 702.6,190.1 705.8,187.2 709.0,185.0 712.2,183.5 715.4,182.8 718.6,182.7 721.8,183.0 725.0,183.3 728.2,183.3 731.4,183.0 734.6,182.2 737.7,181.1 740.9,179.8 744.1,178.7 747.3,178.0 750.5,178.0 753.7,178.9 756.9,180.5 760.1,182.7 763.3,185.1 766.5,187.4 769.7,189.3 772.9,190.3 776.0,190.3 779.2,189.4 782.4,187.8 785.6,185.6 788.8,183.3 792.0,181.2"/><line x1="28" y1="216" x2="792" y2="216" class="sep"/></g><g><text x="28" y="244.0" class="sym">USDT</text><text x="106" y="244.0" class="name">Tether</text><text x="472" y="244.0" class="price" text-anchor="end">$1.00</text><text x="617" y="244.0" class="pct" fill="#34d399" text-anchor="end">▲ 0.01%</text><polyline fill="none" stroke="#34d399" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="642.0,248.0 645.2,245.9 648.4,243.2 651.6,240.4 654.8,237.9 658.0,236.1 661.1,235.0 664.3,234.7 667.5,234.8 670.7,235.1 673.9,235.2 677.1,234.9 680.3,233.9 683.5,232.2 686.7,230.2 689.9,228.0 693.1,226.3 696.3,225.2 699.4,225.3 702.6,226.5 705.8,228.9 709.0,232.1 712.2,235.7 715.4,239.2 718.6,242.2 721.8,244.3 725.0,245.4 728.2,245.4 731.4,244.7 734.6,243.4 737.7,242.1 740.9,241.1 744.1,240.6 747.3,240.6 750.5,241.2 753.7,241.9 756.9,242.4 760.1,242.5 763.3,241.7 766.5,239.9 769.7,237.3 772.9,234.1 776.0,230.8 779.2,227.7 782.4,225.3 785.6,224.0 788.8,224.0 792.0,225.2"/><line x1="28" y1="262" x2="792" y2="262" class="sep"/></g><g><text x="28" y="290.0" class="sym">BNB</text><text x="106" y="290.0" class="name">BNB</text><text x="472" y="290.0" class="price" text-anchor="end">$592.40</text><text x="617" y="290.0" class="pct" fill="#f87171" text-anchor="end">▼ 0.81%</text><polyline fill="none" stroke="#f87171" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="642.0,270.0 645.2,271.7 648.4,272.7 651.6,273.2 654.8,273.3 658.0,273.4 661.1,273.7 664.3,274.4 667.5,275.8 670.7,277.6 673.9,279.7 677.1,281.8 680.3,283.5 683.5,284.6 686.7,284.7 689.9,283.9 693.1,282.1 696.3,279.7 699.4,277.0 702.6,274.5 705.8,272.4 709.0,271.1 712.2,270.6 715.4,271.0 718.6,272.0 721.8,273.3 725.0,274.6 728.2,275.6 731.4,276.1 734.6,276.2 737.7,276.0 740.9,275.6 744.1,275.5 747.3,275.9 750.5,277.0 753.7,278.8 756.9,281.4 760.1,284.5 763.3,287.6 766.5,290.4 769.7,292.6 772.9,293.8 776.0,294.0 779.2,293.2 782.4,291.7 785.6,289.9 788.8,287.9 792.0,286.3"/><line x1="28" y1="308" x2="792" y2="308" class="sep"/></g><g><text x="28" y="336.0" class="sym">SOL</text><text x="106" y="336.0" class="name">Solana</text><text x="472" y="336.0" class="price" text-anchor="end">$148.22</text><text x="617" y="336.0" class="pct" fill="#f87171" text-anchor="end">▼ 0.83%</text><polyline fill="none" stroke="#f87171" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="642.0,324.2 645.2,325.2 648.4,325.5 651.6,325.3 654.8,324.8 658.0,324.4 661.1,324.4 664.3,324.7 667.5,325.5 670.7,326.5 673.9,327.5 677.1,328.3 680.3,328.6 683.5,328.1 686.7,326.9 689.9,325.0 693.1,322.7 696.3,320.3 699.4,318.1 702.6,316.6 705.8,316.0 709.0,316.3 712.2,317.4 715.4,319.2 718.6,321.3 721.8,323.4 725.0,325.2 728.2,326.6 731.4,327.4 734.6,327.7 737.7,327.8 740.9,327.9 744.1,328.3 747.3,329.2 750.5,330.7 753.7,332.6 756.9,334.7 760.1,336.9 763.3,338.7 766.5,339.8 769.7,340.0 772.9,339.3 776.0,337.8 779.2,335.6 782.4,333.2 785.6,331.0 788.8,329.1 792.0,328.0"/><line x1="28" y1="354" x2="792" y2="354" class="sep"/></g><g><text x="28" y="382.0" class="sym">XRP</text><text x="106" y="382.0" class="name">XRP</text><text x="472" y="382.0" class="price" text-anchor="end">$0.5273</text><text x="617" y="382.0" class="pct" fill="#34d399" text-anchor="end">▲ 1.92%</text><polyline fill="none" stroke="#34d399" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="642.0,386.0 645.2,384.9 648.4,383.5 651.6,382.2 654.8,380.9 658.0,379.9 661.1,379.2 664.3,378.7 667.5,378.4 670.7,378.2 673.9,378.0 677.1,377.5 680.3,376.8 683.5,375.8 686.7,374.7 689.9,373.6 693.1,372.6 696.3,371.9 699.4,371.6 702.6,371.7 705.8,372.3 709.0,373.2 712.2,374.2 715.4,375.2 718.6,376.0 721.8,376.5 725.0,376.6 728.2,376.2 731.4,375.6 734.6,374.8 737.7,374.0 740.9,373.3 744.1,372.8 747.3,372.5 750.5,372.4 753.7,372.3 756.9,372.2 760.1,371.9 763.3,371.2 766.5,370.3 769.7,369.0 772.9,367.4 776.0,365.8 779.2,364.4 782.4,363.1 785.6,362.3 788.8,362.0 792.0,362.1"/><line x1="28" y1="400" x2="792" y2="400" class="sep"/></g>
+
+  <text x="28" y="430" class="foot">Live data from the CoinStats Crypto API · </text>
+  <text x="260" y="430" class="foot-link">coinstats.app/crypto-api</text>
+</svg>
