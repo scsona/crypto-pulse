@@ -1,0 +1,59 @@
+name: Update market-pulse card
+
+# Regenerates assets/market-pulse.svg on a schedule and commits it if it
+# changed, so the README always shows a fresh snapshot.
+#
+# Set a repository secret named COINSTATS_API_KEY with a key from
+# https://coinstats.app/crypto-api/ — without it the job falls back to demo
+# data so the workflow still succeeds on forks.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch:          # manual "Run workflow" button
+  push:
+    branches: [main]
+    paths:
+      - "crypto_pulse/svgcard.py"
+      - "scripts/generate_card.py"
+      - ".github/workflows/update-card.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-card
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate card
+        env:
+          COINSTATS_API_KEY: ${{ secrets.COINSTATS_API_KEY }}
+        run: |
+          if [ -z "$COINSTATS_API_KEY" ]; then
+            echo "No COINSTATS_API_KEY secret set — using demo data."
+            python scripts/generate_card.py --demo
+          else
+            python scripts/generate_card.py
+          fi
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain assets/market-pulse.svg)" ]; then
+            git add assets/market-pulse.svg
+            git commit -m "chore: refresh market-pulse card [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
