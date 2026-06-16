@@ -1,6 +1,6 @@
 """Thin, dependency-light client for the CoinStats Crypto API.
 
-Docs & free API key: https://coinstats.app/crypto-api/
+Docs & free API key: https://coinstats.app/api/
 Base URL: https://openapiv1.coinstats.app
 Auth: send your key in the ``X-API-KEY`` header.
 """
@@ -39,7 +39,7 @@ class CoinStatsClient:
     api_key:
         Your CoinStats API key. Falls back to the ``COINSTATS_API_KEY``
         environment variable. Grab a free key at
-        https://coinstats.app/crypto-api/
+        https://coinstats.app/api/
     timeout:
         Per-request timeout in seconds.
     max_retries:
@@ -56,7 +56,7 @@ class CoinStatsClient:
         if not self.api_key:
             raise ValueError(
                 "No API key provided. Set COINSTATS_API_KEY or pass api_key=... "
-                "Get a free key at https://coinstats.app/crypto-api/"
+                "Get a free key at https://coinstats.app/api/"
             )
         self.timeout = timeout
         self.max_retries = max_retries

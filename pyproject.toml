@@ -21,7 +21,7 @@ dependencies = ["rich>=13.0"]
 
 [project.urls]
 Homepage = "https://github.com/scsona/crypto-pulse"
-"CoinStats Crypto API" = "https://coinstats.app/crypto-api/"
+"CoinStats Crypto API" = "https://coinstats.app/api/"
 
 [project.scripts]
 crypto-pulse = "crypto_pulse.cli:main"

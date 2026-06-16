@@ -2,7 +2,7 @@
 
 Lets you preview the dashboard and generate the SVG card with no API key, so
 the README renders out of the box. Live data comes from the CoinStats Crypto
-API: https://coinstats.app/crypto-api/
+API: https://coinstats.app/api/
 """
 
 from __future__ import annotations

@@ -154,7 +154,7 @@ def build_dashboard(
         header.append("   [DEMO DATA]", style="bold magenta")
 
     footer = Text(
-        "data: coinstats.app/crypto-api   ·   ctrl-c to quit",
+        "data: coinstats.app/api   ·   ctrl-c to quit",
         style="dim",
         justify="center",
     )

@@ -4,7 +4,7 @@ name: Update market-pulse card
 # changed, so the README always shows a fresh snapshot.
 #
 # Set a repository secret named COINSTATS_API_KEY with a key from
-# https://coinstats.app/crypto-api/ — without it the job falls back to demo
+# https://coinstats.app/api/ — without it the job falls back to demo
 # data so the workflow still succeeds on forks.
 
 on:

@@ -7,7 +7,7 @@ to run locally:
     COINSTATS_API_KEY=... python scripts/generate_card.py
     python scripts/generate_card.py --demo      # no key needed
 
-Get a free API key at https://coinstats.app/crypto-api/
+Get a free API key at https://coinstats.app/api/
 """
 
 from __future__ import annotations
