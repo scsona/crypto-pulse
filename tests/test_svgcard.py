@@ -20,7 +20,7 @@ def test_is_valid_svg_root():
 
 
 def test_links_to_coinstats():
-    assert "coinstats.app/api" in _render()
+    assert "api.coinstats.app" in _render()
 
 
 def test_no_content_overflows_viewbox():

@@ -5,7 +5,7 @@ Usage:
     crypto-pulse card -o out.svg # render the README market-pulse SVG card
     crypto-pulse --help
 
-Data comes from the CoinStats Crypto API: https://coinstats.app/api/
+Data comes from the CoinStats Crypto API: https://api.coinstats.app/
 """
 
 from __future__ import annotations
@@ -35,7 +35,7 @@ def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="crypto-pulse",
         description="Live crypto dashboard + README SVG card, powered by the CoinStats Crypto API "
-        "(https://coinstats.app/api/).",
+        "(https://api.coinstats.app/).",
     )
     sub = parser.add_subparsers(dest="command")
 

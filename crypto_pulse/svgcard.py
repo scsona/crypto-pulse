@@ -156,7 +156,7 @@ def render_card(
   {''.join(rows)}
 
   <text x="{PAD}" y="{height - 18}" class="foot">Live data from the CoinStats Crypto API · </text>
-  <text x="{PAD + 232}" y="{height - 18}" class="foot-link">coinstats.app/api</text>
+  <text x="{PAD + 232}" y="{height - 18}" class="foot-link">api.coinstats.app</text>
 </svg>
 '''
     return svg

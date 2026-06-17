@@ -2,13 +2,13 @@
 
 # ₿ crypto-pulse
 
-**A live terminal crypto dashboard *and* a self-updating README card — both powered by the [CoinStats Crypto API](https://coinstats.app/api/).**
+**A live terminal crypto dashboard *and* a self-updating README card — both powered by the [CoinStats Crypto API](https://api.coinstats.app/).**
 
 [![CI](https://github.com/scsona/crypto-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/scsona/crypto-pulse/actions/workflows/ci.yml)
 [![Update card](https://github.com/scsona/crypto-pulse/actions/workflows/update-card.yml/badge.svg)](https://github.com/scsona/crypto-pulse/actions/workflows/update-card.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
-[![Powered by CoinStats](https://img.shields.io/badge/data-CoinStats%20Crypto%20API-38bdf8.svg)](https://coinstats.app/api/)
+[![Powered by CoinStats](https://img.shields.io/badge/data-CoinStats%20Crypto%20API-38bdf8.svg)](https://api.coinstats.app/)
 
 </div>
 
@@ -22,7 +22,7 @@ The image below is **regenerated every 6 hours by GitHub Actions** and committed
 
 </div>
 
-> The numbers above come from the **[CoinStats Crypto API](https://coinstats.app/api/)** → [`/coins`](https://coinstats.app/api/) for prices and [`/coins/{id}/charts`](https://coinstats.app/api/) for the sparklines.
+> The numbers above come from the **[CoinStats Crypto API](https://api.coinstats.app/)** → [`/coins`](https://api.coinstats.app/) for prices and [`/coins/{id}/charts`](https://api.coinstats.app/) for the sparklines.
 
 ---
 
@@ -64,7 +64,7 @@ pip install -e .            # installs `rich`; the card generator needs only std
 
 ### 1. Get a free API key
 
-Grab a key (free tier = 20,000 credits/month) at **<https://coinstats.app/api/>**, then:
+Grab a key (free tier = 20,000 credits/month) at **<https://api.coinstats.app/>**, then:
 
 ```bash
 cp .env.example .env        # paste your key into .env
@@ -88,7 +88,7 @@ No key handy? Every command supports `--demo` for an offline preview.
 
 This repo ships a GitHub Action ([`.github/workflows/update-card.yml`](.github/workflows/update-card.yml)) that regenerates the card on a schedule and commits it. To use it in **your** repo:
 
-1. Add a repository secret named `COINSTATS_API_KEY` (Settings → Secrets and variables → Actions). Get the value from the [CoinStats Crypto API](https://coinstats.app/api/) dashboard.
+1. Add a repository secret named `COINSTATS_API_KEY` (Settings → Secrets and variables → Actions). Get the value from the [CoinStats Crypto API](https://api.coinstats.app/) dashboard.
 2. Embed the card anywhere in your README:
    ```markdown
    <img src="assets/market-pulse.svg" width="760">
@@ -121,7 +121,7 @@ All requests go to `https://openapiv1.coinstats.app` with your key in the `X-API
 | `GET /coins` | prices, market caps, 1h/24h/7d changes |
 | `GET /coins/{coinId}/charts` | the sparklines and mini-charts |
 
-See the full reference and grab a key at **[coinstats.app/api](https://coinstats.app/api/)**.
+See the full reference and grab a key at **[api.coinstats.app](https://api.coinstats.app/)**.
 
 ## Project layout
 
@@ -150,5 +150,5 @@ pytest -q
 [MIT](LICENSE) © scsona
 
 <div align="center">
-<sub>Market data by the <a href="https://coinstats.app/api/">CoinStats Crypto API</a>. Not financial advice.</sub>
+<sub>Market data by the <a href="https://api.coinstats.app/">CoinStats Crypto API</a>. Not financial advice.</sub>
 </div>

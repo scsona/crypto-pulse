@@ -1,5 +1,5 @@
 """crypto-pulse — a live terminal crypto dashboard and self-updating README
-SVG card, powered by the CoinStats Crypto API (https://coinstats.app/api/).
+SVG card, powered by the CoinStats Crypto API (https://api.coinstats.app/).
 """
 
 from __future__ import annotations
