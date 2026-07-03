@@ -31,7 +31,7 @@
   <rect x="0.5" y="0.5" width="819" height="447" rx="16" fill="none" stroke="#1f2a3d"/>
 
   <text x="28" y="44" class="title">₿ Crypto Market Pulse</text>
-  <text x="28" y="64" class="subtitle">Top 6 by market cap · 24h change · updated 2026-07-02 19:20 UTC</text>
+  <text x="28" y="64" class="subtitle">Top 6 by market cap · 24h change · updated 2026-07-03 02:42 UTC</text>
 
   <text x="552" y="44" class="pulse-label" fill="#34d399" text-anchor="start">🙂 GREED</text>
   <text x="792" y="44" class="pulse-score" text-anchor="end">61/100</text>
